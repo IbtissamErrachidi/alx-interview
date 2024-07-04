@@ -1,3 +1,9 @@
+#!/usr/bin/python3
+"""
+involves determining.
+"""
+
+
 def canUnlockAll(boxes):
     n = len(boxes)
     opens = set()
@@ -12,4 +18,3 @@ def canUnlockAll(boxes):
                     keys.append(new_key)
     
     return len(opens) == n
-
