@@ -30,4 +30,3 @@ def validUTF8(data):
         num_bytes -= 1
 
     return num_bytes == 0
-
