@@ -1,5 +1,9 @@
 #!/usr/bin/python3
+"""
+    N-queen problem
+"""
 import sys
+
 
 def is_safe(board, row, col):
     """
@@ -16,7 +20,6 @@ def is_safe(board, row, col):
 def solve_nqueens(n, row, board, solutions):
     """
     Solve the N Queens problem using backtracking.
-    This function places queens one by one in different columns.
     """
     if row == n:
         solutions.append(board[:])
