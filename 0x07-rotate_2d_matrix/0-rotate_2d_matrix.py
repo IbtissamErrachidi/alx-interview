@@ -10,6 +10,7 @@ def rotate_2d_matrix(matrix):
 
     Args:
         matrix (list of list of int): 2D matrix to be rotated
+
     """
     n = len(matrix)
 
