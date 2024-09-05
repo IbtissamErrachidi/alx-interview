@@ -1,4 +1,7 @@
 #!/usr/bin/python3
+"""
+Given a set of consecutive integers starting from 1 up to and including n
+"""
 
 def sieve(n):
     """Returns a list of booleans indicating whether numbers up to n are prime."""
