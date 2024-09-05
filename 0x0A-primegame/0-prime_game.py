@@ -20,7 +20,6 @@ def isWinner(x, nums):
     """
     if not nums or x < 1:
         return None
-
     max_num = max(nums)
     primes = sieve(max_num)  # Generate a list of prime numbers up to the maximum value in nums
     maria_wins = 0
