@@ -24,13 +24,12 @@ def isWinner(x, nums):
     if not nums or x < 1:
         return None
     max_num = max(nums)
-    primes = sieve(max_num)  # Generate a list of prime numbers up to the maximum value in nums
+    primes = sieve(max_num)
     maria_wins = 0
     ben_wins = 0
 
     for n in nums:
         prime_count = count_primes_up_to(n, primes)
-        # If the count of prime numbers is odd, Maria wins; otherwise, Ben wins
         if prime_count % 2 != 0:
             maria_wins += 1
         else:
@@ -42,4 +41,3 @@ def isWinner(x, nums):
         return "Ben"
     else:
         return None
-
